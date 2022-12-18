@@ -1,0 +1,28 @@
+<div class="modal fade registrationmodal" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add your task</h5>
+        </div>
+        <div class="modal-body">
+            <!-- start code for login from -->
+            <form action="/addtask" method="post">
+                <div class="mb-3">
+                    <label for="Task_title" class="form-label">Task Title</label>
+                    <input type="text" class="form-control" id="Task_title" aria-describedby="emailHelp" name="ttitle">
+                </div>
+                <div class="mb-3">
+                    <label for="Task" class="form-label">What to do?</label>
+                    <textarea class="form-control" id="Task" rows="3" name="task"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="Task_time" class="form-label">Time to do?</label>
+                    <input type="date" class="form-control" id="Task_time" name="ttime">
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+            <!-- end code for login form -->
+        </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="modal fade loginModal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Your Account</h5>
+        </div>
+        <div class="modal-body">
+            <!-- start code for login from -->
+            <form action="/login" method="post">
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" name="umail">
+                </div>
+                <div class="mb-3">
+                    <label for="userPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="userPassword" name="upass">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Login</button>
+                <small class="smlR" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-dismiss="modal">if not have an account register?</small>
+            </form>
+            <!-- end code for login form -->
+        </div>
+        </div>
+    </div>
+</div>

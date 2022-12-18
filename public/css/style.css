@@ -1,0 +1,186 @@
+body{
+    background-color:#0f1424;
+}
+
+/* style for text effect */
+.textDiv{
+    width:100%;
+    height:300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    
+    color:#00aee6;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-reflect: below -30px linear-gradient(transparent,#00000040);
+}
+
+.loginModal{
+    margin-top:150px;
+}
+
+.smlR{
+    color:blue;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.registrationmodal{
+    margin-top:100px;
+}
+
+.loginbtn,.registerbtn,.logoutbtn{
+    margin-left: 10px;
+}
+
+.code{
+    width:40px;
+    height:40px;
+    margin-left:5px;
+    font-size: 20px;
+}
+
+.codeSection{
+    margin-top:50px;
+
+}
+.hiddenudata{
+    display: none;
+}
+
+.Errtoast{
+    margin-left:35%;
+    margin-top:200px;
+}
+.logoutlink{
+    text-decoration: none;
+    color: black;
+}
+
+.colorA{
+    color: whitesmoke;
+}
+
+.searchBox{
+    background:none;
+    color: white;
+    border: none;
+    border-radius: 0%;
+    border-bottom: 2px solid white;
+
+}
+.searchBox:focus{
+    background:none;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0%;
+    border-bottom: 2px solid white;
+}
+
+
+/* styling about todo page */
+
+/* coding about task btn*/
+.subQuote{
+    width: 100%;
+    text-align: center;
+}
+.taskQuote{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0;
+    color: #02fd01;
+}
+.taskSubQuote{
+    font-size: 30px;
+    margin-top: 0;
+    color: #00aee6;
+}
+.taskBtnDiv{
+    width:100%;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskBtn{
+    display: inline-block;
+    position:relative;
+    padding: 18px 90px;
+    color: #ffffff;
+    background-color: #343a40;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.taskBtn span{
+    display: block;
+    width: 0px;
+    height:0px;
+    background-color: #ff0a54;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease 0s,height 0.6s ease 0s;
+    z-index:-1;
+}
+
+.taskBtn:hover span{
+    width: 562px;
+    height: 562px;
+}
+
+.taskBtn:hover{
+    color:white;
+}
+
+/* Content task  */
+content{
+    width:100%;
+    padding:80px 120px;
+    background-color: #000000;
+}
+
+.content h2{
+    margin-bottom: 30px;
+    color:#1cfcec;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.content p{
+    color:#ddd;
+    font-size: 20px;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 1.7;
+}
+
+
+.taskContainter{
+    margin-top: 40px;
+    width:70%;
+    margin-left:15%;
+}

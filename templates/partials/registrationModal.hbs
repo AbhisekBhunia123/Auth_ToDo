@@ -1,0 +1,33 @@
+<div class="modal fade registrationmodal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Make A Registration For Move Ahade</h5>
+        </div>
+        <div class="modal-body">
+            <!-- start code for login from -->
+            <form action="/register" method="post">
+                <div class="mb-3">
+                    <label for="userName" class="form-label">User Name</label>
+                    <input type="text" class="form-control" id="userName" aria-describedby="emailHelp" name="uname">
+                </div>
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" name="umail">
+                </div>
+                <div class="mb-3">
+                    <label for="userPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="userPassword" name="upass">
+                </div>
+                <div class="mb-3">
+                    <label for="userCPassword" class="form-label">Confirm Password</label>
+                    <input type="text" class="form-control" id="userCPassword" aria-describedby="emailHelp" name="ucpass">
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+                <small class="smlR" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-dismiss="modal">if already have an account login ?</small>
+            </form>
+            <!-- end code for login form -->
+        </div>
+        </div>
+    </div>
+</div>

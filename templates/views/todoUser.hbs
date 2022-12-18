@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Auth ToDo</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="container todoMainDiv"> 
+        {{>navBar isLogin=login}}
+
+        {{!-- coding for hover task button --}}
+        <div class="taskBtnDiv">
+            <p class="taskQuote">“You may delay, but time will not.” </p>
+            <div class="subQuote">
+            <p class="taskSubQuote">A plan is what, a schedule is when. It takes both a plan and a schedule to get things done.</p>
+            </div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="taskBtn">
+                Add Task
+                <span></span>
+            </a>
+            {{> addTaskModal}}
+        </div>
+        {{!-- coding end for hover task button --}}
+
+        {{!-- Text section --}}
+        <div class="content">
+        <h2>Keep your face always toward the sunshine, and shadows will fall behind you.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Officia culpa illum consequatur quasi aliquam, quis
+              facilis? Id distinctio nihil debitis alias asperiores 
+              suscipit sint quia quaerat, nam soluta officiis eveniet ut 
+              cumque sed impedit velit ex atque provident accusamus expedita 
+              fuga nesciunt! Vero suscipit ab tempora quidem eaque tenetur
+               veniam deleniti id perferendis? Beatae cumque natus repudiandae 
+               aliquid alias ducimus dignissimos quo tempora eaque labore odit 
+               quibusdam deleniti quae, saepe ipsam, consequatur reprehenderit id 
+               expedita. Laborum illum, atque delectus nulla corrupti autem, rem dolores, 
+               ea harum odio architecto velit nisi. Temporibus minus, eius commodi eveniet
+                magnam similique et vero! A nesciunt tenetur nisi voluptatem, magnam ducimus, 
+                officiis itaque fugiat nihil eum possimus reiciendis doloribus unde debitis beatae
+                 repellat. Itaque recusandae vel molestias doloribus fugit consectetur fuga illo 
+                 sequi officia magnam impedit incidunt, cumque consequuntur molestiae a harum 
+                 expedita voluptas eius! Sapiente excepturi corrupti, numquam distinctio 
+                 aspernatur repudiandae cupiditate dolores ipsa deserunt at possimus 
+                 
+            </p>
+        </div>
+        {{!-- Text section --}}
+
+        {{!-- <button onclick="putReq()">Click</button> --}}
+    </div>
+    <script src="/js/todoPut.js"></script>
+</body>
+</html>

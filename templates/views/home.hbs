@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Auth ToDo</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/buttonstyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        {{>navBar isLogin=login hasCookie=Cookie}}
+
+        <!-- error tost section start-->
+        {{#if istoastErr }}
+        {{>tostsSection toastHeaderMsg=headerMsg toastErrMsg=toastMsg}}
+        {{/if}}
+        <!-- errot tost section end -->
+
+
+        <!-- codeSection start -->
+        {{#if isVisible}}
+        {{>codeSection}}
+        {{/if}}
+        <!-- codeSection end -->
+
+        <!-- login modal start -->
+        {{>loginModal}}
+        <!-- login modal end -->
+
+        <!-- registration modal start -->
+        {{>registrationModal}}
+        <!-- registration modal end -->
+        <div class="textDiv">
+        <h2 class="text">Schedule your task in authToDo</h2>
+        </div>
+        <div class="neonButtonDiv">
+            <a class="anc" {{#if Cookie}} data-bs-toggle="" data-bs-target="" href="/todouser" {{else}} data-bs-toggle="modal" data-bs-target="#exampleModal2" style="cursor: pointer;" {{/if}}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Get Start
+            </a>
+        </div>
+        <div class="content">
+        <h2>Keep your face always toward the sunshine, and shadows will fall behind you.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Officia culpa illum consequatur quasi aliquam, quis
+              facilis? Id distinctio nihil debitis alias asperiores 
+              suscipit sint quia quaerat, nam soluta officiis eveniet ut 
+              cumque sed impedit velit ex atque provident accusamus expedita 
+              fuga nesciunt! Vero suscipit ab tempora quidem eaque tenetur
+               veniam deleniti id perferendis? Beatae cumque natus repudiandae 
+               aliquid alias ducimus dignissimos quo tempora eaque labore odit 
+               quibusdam deleniti quae, saepe ipsam, consequatur reprehenderit id 
+               expedita. Laborum illum, atque delectus nulla corrupti autem, rem dolores, 
+               ea harum odio architecto velit nisi. Temporibus minus, eius commodi eveniet
+                magnam similique et vero! A nesciunt tenetur nisi voluptatem, magnam ducimus, 
+                officiis itaque fugiat nihil eum possimus reiciendis doloribus unde debitis beatae
+                 repellat. Itaque recusandae vel molestias doloribus fugit consectetur fuga illo 
+                 sequi officia magnam impedit incidunt, cumque consequuntur molestiae a harum 
+                 expedita voluptas eius! Sapiente excepturi corrupti, numquam distinctio 
+                 aspernatur repudiandae cupiditate dolores ipsa deserunt at possimus 
+                 
+            </p>
+        </div>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

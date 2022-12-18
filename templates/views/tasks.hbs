@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Auth ToDo</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="container todoMainDiv"> 
+        {{>navBar isLogin=login}}
+        {{!-- coding for show tasks--}}
+        <div class="container taskContainter">
+        {{#each todoData}}
+        <div class="card mb-2">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{taskTitle}}</h5>
+                <p class="card-text">{{task}}</p>
+                <p style="float: right;">Expected date - {{taskTime}}</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal4" onclick="setData(event)" name={{_id}}>Update</button>
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal5" onclick="delData(event)" name={{_id}}>Delete</button>
+            </div>
+        </div>
+
+        {{/each}}
+        {{> updateTaskModal}}
+        {{> deleteSure}}
+        
+        </div>
+        {{!-- coding for show tasks--}}
+    </div>
+    <script src="/js/todoPut.js"></script>
+</body>
+</html>
